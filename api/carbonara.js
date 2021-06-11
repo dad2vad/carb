@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse, NowRequestQuery } from "@now/node";
+
 import formidable from "formidable";
 import fs from "fs";
 import { getCarbonURL, getScreenshot } from "./_lib";
