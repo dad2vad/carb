@@ -5,10 +5,10 @@ import { getCarbonURL, getScreenshot } from "./_lib";
 import { Options } from "./_lib/url";
 
 const handler = async (
-  data: string,
-  query?: NowRequestQuery,
-): Promise<Buffer | undefined> => {
-  const url = getCarbonURL(data, query as Partial<Options>);
+  data,
+  query,
+) => {
+  const url = getCarbonURL(data, query);
   if (!url) {
     return;
   }
@@ -17,7 +17,7 @@ const handler = async (
   return imageBuffer;
 };
 
-export default async (req: NowRequest, res: NowResponse): Promise<void> => {
+export default async (req, res) => {
   const form = new formidable.IncomingForm();
 
   /**
