@@ -6,8 +6,6 @@
     "allowJs": true,
     "outDir": "build",
     "rootDir": "api",
-    "strict": true,
-    "noImplicitAny": true,
     "esModuleInterop": true,
     "resolveJsonModule": true
   }
